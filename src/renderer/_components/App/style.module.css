@@ -1,0 +1,152 @@
+/* 最適化されたWindowsタスクバースタイル */
+
+/* コンテナ */
+.container {
+  backdrop-filter: blur(20px);
+  background-color: rgb(28 28 30 / 0.72);
+  border-top: 1px solid #333;
+  box-shadow: 0 -2px 10px rgb(0 0 0 / 0.2);
+  color: white;
+  font-family: "Segoe UI", "Yu Gothic UI", sans-serif;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* アプリリスト */
+.appList {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  padding-left: 40px;
+  scrollbar-width: none; /* スクロールバー非表示 */
+}
+
+/* スタートボタン */
+.startButton {
+  align-items: center;
+  background-color: #333;
+  border-right: 1px solid #444;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background-color 0.2s;
+  width: 30px;
+}
+
+.startButton:hover {
+  background-color: #444;
+}
+
+.startButton::before {
+  background-color: white;
+  content: "";
+  height: 14px;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z'/%3E%3C/svg%3E")
+    no-repeat center center;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z'/%3E%3C/svg%3E")
+    no-repeat center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 14px;
+}
+
+/* アプリアイテム - アイコンなしに最適化 */
+.appItem {
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  font-size: 11px;
+  height: 28px;
+  justify-content: center;
+  margin: 0 2px;
+  max-width: 200px;
+  min-width: 80px;
+  overflow: hidden;
+  padding: 0 8px;
+  position: relative;
+  transition: background-color 0.2s, border-bottom-color 0.2s;
+  user-select: none;
+}
+
+.appItem:hover {
+  background-color: rgb(255 255 255 / 0.1);
+  border-bottom: 2px solid rgb(255 255 255 / 0.5);
+}
+
+.appItem.active {
+  background-color: rgb(255 255 255 / 0.15);
+  border-bottom: 2px solid #0078d7;
+}
+
+/* アプリ名とタイトルの表示 */
+.appName {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.appTitle {
+  color: rgb(255 255 255 / 0.7);
+  font-size: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* ローディング表示 */
+.loadingSpinner {
+  animation: spin 0.8s linear infinite;
+  border: 2px solid rgb(255 255 255 / 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  height: 14px;
+  width: 14px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.noApps {
+  color: rgb(255 255 255 / 0.5);
+  font-size: 11px;
+}
+
+/* スクロールバー非表示 */
+.appList::-webkit-scrollbar {
+  display: none;
+}
+
+/* テキスト部分のスタイル */
+.textContent {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* レスポンシブ対応 */
+@media (width <= 600px) {
+  .appItem {
+    font-size: 10px;
+    min-width: 60px;
+    padding: 0 6px;
+  }
+
+  .appTitle {
+    font-size: 8px;
+  }
+}

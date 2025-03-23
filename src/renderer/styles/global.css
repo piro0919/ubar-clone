@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden; /* 横スクロールを防止 */
+  width: 100vw; /* ビューポート幅の100%に設定 */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%; /* 幅も100%に設定 */
+}
+
+/* これによりルート要素が画面幅いっぱいに広がります */
+#root {
+  display: flex;
+  flex-direction: column;
+}

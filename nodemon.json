@@ -1,0 +1,7 @@
+{
+  "exec": "electron .",
+  "ext": "js,html,css,json",
+  "watch": [
+    "dist/**/*"
+  ]
+}
