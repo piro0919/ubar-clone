@@ -4,8 +4,8 @@
     "electron": "^35.0.0",
     "node-mac-app-icon": "1.4.0",
     "plist": "3.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "description": "A minimal Ubar clone for Mac",
   "devDependencies": {
@@ -18,8 +18,8 @@
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "22.13.14",
     "@types/plist": "3.0.5",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "8.28.0",
     "@typescript-eslint/parser": "8.28.0",
     "@uphold/commitlint-config": "1.1.1",
@@ -37,7 +37,7 @@
     "eslint-plugin-perfectionist": "4.10.1",
     "eslint-plugin-promise": "7.2.1",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-security": "3.0.1",
     "eslint-plugin-unused-imports": "4.1.4",
     "eslint-plugin-write-good-comments": "0.2.0",
