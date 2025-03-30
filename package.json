@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "active-win": "8.2.1",
+    "active-win": "9.0.0",
     "electron": "^22.0.0",
     "node-mac-app-icon": "1.4.0",
     "plist": "3.1.0",
