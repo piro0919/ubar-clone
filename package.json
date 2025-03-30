@@ -45,7 +45,7 @@
     "knip": "5.46.3",
     "lefthook": "1.11.5",
     "nodemon": "^3.1.9",
-    "style-loader": "^3.3.1",
+    "style-loader": "^4.0.0",
     "stylelint": "16.17.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-recommended": "15.0.0",
