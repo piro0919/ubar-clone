@@ -70,10 +70,10 @@
       "typescript": "^5.0.0"
     },
     "stylelint-css-modules-no-global-scoped-selector": {
-      "stylelint": "16.24.0"
+      "stylelint": "16.25.0"
     },
     "stylelint-no-unused-selectors": {
-      "stylelint": "16.24.0"
+      "stylelint": "16.25.0"
     }
   },
   "scripts": {
