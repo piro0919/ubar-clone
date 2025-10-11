@@ -16,7 +16,7 @@
     "@eslint/js": "9.37.0",
     "@piro0919/next-unused": "0.2.2",
     "@total-typescript/ts-reset": "0.6.1",
-    "@types/node": "22.18.9",
+    "@types/node": "22.18.10",
     "@types/plist": "3.0.5",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
