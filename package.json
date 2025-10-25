@@ -43,7 +43,7 @@
     "eslint-plugin-write-good-comments": "0.2.0",
     "html-webpack-plugin": "^5.5.0",
     "knip": "5.66.2",
-    "lefthook": "1.13.6",
+    "lefthook": "2.0.1",
     "nodemon": "^3.1.9",
     "style-loader": "^4.0.0",
     "stylelint": "16.25.0",
