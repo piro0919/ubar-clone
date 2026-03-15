@@ -58,7 +58,7 @@
     "typescript": "5.9.3",
     "typescript-plugin-css-modules": "^5.1.0",
     "webpack": "^5.74.0",
-    "webpack-cli": "^6.0.0"
+    "webpack-cli": "^7.0.0"
   },
   "main": "dist/main.js",
   "name": "ubar-clone",
